@@ -10,16 +10,13 @@ set t_Co=256 "set 256 color
 syntax enable
 set background=dark
 set cursorline "Highlight current line
-hi CursorLine cterm=NONE ctermbg=234
+hi CursorLine cterm=NONE ctermbg=16
 "Set cursorline color
-colorscheme desert 
-
+set background=dark
 "=====Spacing======"
 set autoindent
 set smartindent
 set tabstop=4 "Number of visiual spaces per TAB
-"set softtabstop=4 "Number of spaces in tab when editing
-"set expandtab "Tabs are spaces
 set shiftwidth=4
 
 "======Mouse======"
@@ -51,8 +48,8 @@ set scrolloff=5 "Set scrolloff line number
 set <F1>=[11~
 set <F2>=[12~
 set <F3>=[13~
+"set <F3>=^[OR"
 set <F4>=[14~
-
 nmap <F1> :call CleanXML()<CR>
 nmap <F2> :call RemoveID()<CR>
 set pastetoggle=<F3>
